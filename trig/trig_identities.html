@@ -1,0 +1,374 @@
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+  window.MathJax = {
+  tex: {
+    tags: 'ams',
+    inlineMath: [ ['$','$']]
+  }
+};
+</script>
+<style>
+  body {
+  max-width: 600px;
+  margin: auto;
+  font-family: CMU Serif
+}
+
+h1 {
+  margin-top: 1em
+}
+
+h2 {
+  margin-top: 1em
+}
+
+table {
+  margin: auto;
+}
+
+td {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center
+}
+</style>
+
+<body>
+
+  <h1>
+    Trigonometric Identities
+  </h1>
+
+  <h2>
+    Definitions
+  </h2>
+
+  $$\begin{align}
+  \sin \theta &= x\text{-coordinate on unit circle} \\[.75em]
+  \cos \theta &= y\text{-coordinate on unit circle} \\[.75em]
+  \tan \theta &= \frac{\sin \theta}{\cos \theta} \\[.75em]
+  \cot \theta &= \frac{\cos \theta}{\sin \theta} \\[.75em]
+  \sec \theta &= \frac{1}{\cos \theta} \\[.75em]
+  \csc \theta &= \frac{1}{\sin \theta}
+  \end{align}$$
+
+  <h2>
+    Reciprocal Identities
+  </h2>
+
+  \begin{align}
+  \sin \theta &= \frac{1}{\csc \theta} \\[.75em]
+  \cos \theta &= \frac{1}{\sec \theta} \\[.75em]
+  \tan \theta &= \frac{1}{\cot \theta} \\[.75em]
+  \cot \theta &= \frac{1}{\tan \theta} \\[.75em]
+  \sec \theta &= \frac{1}{\cos \theta} \\[.75em]
+  \csc \theta &= \frac{1}{\sin \theta}
+  \end{align}
+
+  <h2>
+    Pythagorean Identities
+  </h2>
+
+  \begin{equation} \sin^2 \theta + \cos^2 \theta = 1 \end{equation}
+  \begin{equation} \tan^2 \theta + 1 = \sec^2 \theta \end{equation}
+  \begin{equation} 1 + \cot^2 \theta = \csc^2 \theta \end{equation}
+
+  <h2>
+    Sum/Difference Identities
+  </h2>
+
+  \begin{align}
+  \sin(\alpha \pm \beta) &= \sin \alpha \cos \beta \pm \cos \alpha \sin \beta \\[.75em]
+  \cos(\alpha \pm \beta) &= \cos \alpha \cos \beta \mp \sin \alpha \sin \beta \\[.75em]
+  \tan(\alpha \pm \beta) &= \frac{\tan \alpha \pm \tan \beta}{1 \mp \tan \alpha \tan \beta}
+  \end{align}
+
+  <h2>
+    Double Angle Identities
+  </h2>
+
+  \begin{align}
+  \sin 2\theta &= 2 \sin \theta \cos \theta \\[.75em]
+  \cos 2 \theta & = \cos^2 \theta - \sin^2 \theta \\[.75em]
+  & =2\cos^2 \theta - 1 \\[.75em]
+  & =1-2\sin^2 \theta \\[.75em]
+  \tan2 \theta & = \frac{2 \tan \theta}{1 - \tan^2 \theta}
+  \end{align}
+
+  <h2>
+    Half Angle Identities
+  </h2>
+
+  \begin{align}
+  \sin \frac{\theta}{2} &= \pm \sqrt{\frac{1-\cos \theta}{2}} \\[.75em]
+  \cos \frac{\theta}{2} &= \pm \sqrt{\frac{1+\cos \theta}{2}} \\[.75em]
+  \tan \frac{\theta}{2} &= \pm \sqrt{\frac{1 + \cos \theta}{1 - \cos \theta}} = \frac{\sin \theta}{1 + \cos \theta} = \frac{1 - \cos \theta}{\sin \theta}
+  \end{align}
+
+  <h2>
+    Odd & Even Identities
+  </h2>
+
+  \begin{align}
+  \sin (-\theta) &= -\sin \theta && \text{odd} \\[.75em]
+  \cos(-\theta) &= \cos \theta && \text{even} \\[.75em]
+  \tan(-\theta) &= -\tan \theta && \text{odd} \\[.75em]
+  \cot(-\theta) &= -\cot \theta && \text{odd} \\[.75em]
+  \sec(-\theta) &= \sec \theta && \text{even} \\[.75em]
+  \csc(-\theta) &= -\csc \theta && \text{odd}
+  \end{align}
+
+  <h2>
+    Complement/Cofunction Identities
+  </h2>
+  Note: the <em>complement</em> of an angle $\theta$ is the angle $\frac{\pi}{2} - \theta$.
+
+  \begin{align}
+  \sin \left(\frac\pi 2-\theta\right) &= \cos \theta \\[.75em]
+  \cos \left(\frac\pi 2-\theta\right) &= \sin \theta \\[.75em]
+  \tan \left(\frac\pi 2-\theta\right) &= \cot \theta \\[.75em]
+  \cot \left(\frac\pi 2-\theta\right) &= \tan \theta \\[.75em]
+  \sec \left(\frac\pi 2-\theta\right) &= \csc \theta \\[.75em]
+  \csc \left(\frac\pi 2-\theta\right) &= \sec \theta
+  \end{align}
+
+  <h2>
+    Period Identities
+  </h2>
+  
+  \begin{align}
+   \sin (\theta + 2\pi) &= \sin \theta && \text{period }2\pi \\[.75em]
+  \cos (\theta + 2\pi)  &= \cos \theta && \text{period }2\pi \\[.75em]
+  \tan (\theta + \pi) &= \tan \theta && \text{period }\pi \\[.75em]
+  \cot (\theta + \pi) &= \cot \theta && \text{period }\pi \\[.75em]
+  \sec (\theta + 2\pi) &= \sec \theta && \text{period }2\pi \\[.75em]
+  \csc (\theta + 2\pi) &= \csc \theta && \text{period }2\pi
+  \end{align}
+  
+  <h2>
+    Half-Period Identities
+  </h2>
+  
+  \begin{align}
+   \sin (\theta \pm \pi) &= -\sin \theta && \text{period }2\pi \\[.75em]
+  \cos (\theta \pm \pi)  &= -\cos \theta && \text{period }2\pi \\[.75em]
+  \tan \left(\theta \pm \frac{\pi}{2}\right) &= -\cot \theta && \text{period }\pi \\[.75em]
+  \cot \left(\theta \pm \frac{\pi}{2}\right) &= -\tan \theta && \text{period }\pi \\[.75em]
+  \sec (\theta \pm \pi) &= -\sec \theta && \text{period }2\pi \\[.75em]
+  \csc (\theta \pm \pi) &= -\csc \theta && \text{period }2\pi
+  \end{align}
+  
+  <h2>
+  Inverse Function Cancellation Identities
+  </h2>
+  
+  \begin{align}
+  \sin \left( \arcsin x \right) &= x && \text{only if } x\in [-1,1] \\[.75em]
+  \cos \left( \arccos x \right) &= x && \text{only if } x\in [-1,1] \\[.75em]
+  \tan \left( \arctan x \right) &= x && \\[.75em]
+  \arcsin \left( \sin \theta \right) &= \theta && \text{only if } \theta \in \left[ -\frac{\pi}{2}, \frac{\pi}{2} \right] \\[.75em]
+    \arccos \left( \cos \theta \right) &= \theta && \text{only if } \theta \in [0, \pi] \\[.75em]
+      \arctan \left( \tan \theta \right) &= \theta && \text{only if } \theta \in \left( -\frac{\pi}{2}, \frac{\pi}{2} \right)
+  \end{align}
+  
+  <h2>
+  Sum-to-Product Identities
+  </h2>
+  
+  \begin{align}
+  \sin \alpha \pm \sin \beta &= 2 \sin \left( \frac{\alpha \pm \beta}{2} \right) \cos \left( \frac{\alpha \mp \beta}{2}\right)  \\[.75em]
+  \cos \alpha + \cos \beta &= 2 \cos \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2}\right) \\[.75em]
+  
+    \cos \alpha - \cos \beta &= -2 \sin \left( \frac{\alpha + \beta}{2} \right) \cos \left( \frac{\alpha - \beta}{2}\right) 
+  \end{align}
+  
+  <h2>
+  Law of Sines
+  </h2>
+  
+  \begin{equation}
+  \frac{\sin A}{a} = \frac{\sin B}{b} = \frac{\sin C}{c}
+  \end{equation}
+  
+    <h2>
+  Law of Cosines
+  </h2>
+  \begin{align}
+  a^2 &= b^2 + c^2 - 2bc \cos A \\[.75em]
+    b^2 &= a^2 + c^2 - 2ac \cos B \\[.75em]
+  c^2 &= a^2 + b^2 - 2ab \cos C
+
+  \end{align}
+  
+  <h1>
+    Additional Reference
+  </h1>
+  
+  <h2>
+  Special Values
+  </h2>
+  
+  <table>
+  <tr>
+    <td>degrees</td>
+    <td>radians</td>
+    <td>$\sin$</td>
+    <td>$\cos$</td>
+    <td>$\tan$</td>
+  </tr>
+  <tr>
+    <td>$0^\circ$</td>
+    <td>$0$</td>
+    <td>$0$</td>
+    <td>$1$</td>
+    <td>$0$</td>
+  </tr>
+    <tr>
+    <td>$30^\circ$</td>
+    <td>$\frac \pi 6$</td>
+    <td>$\frac 12$</td>
+    <td>$\frac{\sqrt{3}} 2$</td>
+    <td>$\frac{\sqrt{3}} 3$</td>
+  </tr>
+    <tr>
+    <td>$45^\circ$</td>
+    <td>$\frac \pi 4$</td>
+    <td>$\frac{\sqrt{2}}2$</td>
+    <td>$\frac{\sqrt{2}}2$</td>
+    <td>$1$</td>
+  </tr>
+    <tr>
+    <td>$60^\circ$</td>
+    <td>$\frac \pi 3$</td>
+        <td>$\frac{\sqrt{3}} 2$</td>
+    <td>$\frac 12$</td>
+    <td>$\frac{\sqrt{3}} 3$</td>
+  </tr>
+    <tr>
+    <td>$90^\circ$</td>
+    <td>$\frac \pi 2$</td>
+    <td>$1$</td>
+    <td>$0$</td>
+    <td>undefined</td>
+  </tr>
+  </table>
+  
+  <h2>
+  $±$ Signs by Quadrant
+  </h2>
+  
+  <table>
+  <tr>
+    <td></td>
+    <td>QI</td>
+    <td>QII</td>
+    <td>QIII</td>
+    <td>QIV</td>
+  </tr>
+  <tr>
+    <td>$\sin$ & $\csc$</td>
+    <td>$+$</td>
+    <td>$+$</td>
+    <td>$-$</td>
+    <td>$-$</td>
+  </tr>
+    <tr>
+    <td>$\tan$ & $\csc$</td>
+    <td>$+$</td>
+    <td>$-$</td>
+    <td>$+$</td>
+    <td>$-$</td>
+  </tr>
+      <tr>
+    <td>$\cos$ & $\sec$</td>
+    <td>$+$</td>
+    <td>$-$</td>
+    <td>$-$</td>
+    <td>$+$</td>
+  </tr>
+  </table>
+
+  <h2>
+    Domain & Range
+  </h2>
+
+  <table>
+    <tr>
+      <td></td>
+      <td>domain</td>
+      <td>range</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>$f(\theta) = \sin \theta$</td>
+      <td>$\mathbb R$</td>
+      <td>$[-1,1]$</td>
+            <td>\begin{equation}\end{equation}</td>
+    </tr>
+    <tr>
+      <td>$f(\theta) = \cos \theta$</td>
+      <td>$\mathbb R$</td>
+      <td>$[-1,1]$</td>
+            <td>\begin{equation}\end{equation}</td>
+    </tr>
+    <tr>
+      <td>$f(\theta) = \tan \theta$</td>
+      <td>$\theta \neq \frac{\pi}{2} + \pi n$</td>
+      <td>$\mathbb R$</td>
+            <td>\begin{equation}\end{equation}</td>
+    </tr>
+    <tr>
+      <td>$f(\theta) = \cot \theta$</td>
+      <td>$\theta \neq \pi n$</td>
+      <td>$\mathbb R$</td>
+            <td>\begin{equation}\end{equation}</td>
+    </tr>
+    <tr>
+      <td>$f(\theta) = \sec \theta$</td>
+      <td>$\theta \neq \frac{\pi}{2} + \pi n$</td>
+      <td>$[-\infty,-1]\cup[1,\infty)$</td>
+            <td>\begin{equation}\end{equation}</td>
+    </tr>
+    <tr>
+      <td>$f(\theta) = \csc \theta$</td>
+      <td>$\theta \neq \pi n$</td>
+      <td>$[-\infty,-1]\cup[1,\infty)$</td>
+            <td>\begin{equation}\end{equation}</td>
+    </tr>
+    <tr>
+      <td>$f(x) = \arcsin x$</td>
+      <td>$[-1,1]$</td>
+      <td>$[-\frac{\pi}{2}, \frac{\pi}{2}]$</td>
+            <td>\begin{equation}\end{equation}</td>
+    </tr>
+    <tr>
+      <td>$f(x) = \arccos x$</td>
+      <td>$[-1,1]$</td>
+      <td>$[0,\pi]$</td>
+            <td>\begin{equation}\end{equation}</td>
+    </tr>
+    <tr>
+      <td>$f(x) = \arctan x$</td>
+      <td>$\mathbb R$</td>
+      <td>$(-\frac{\pi}{2}, \frac{\pi}{2})$</td>
+            <td>\begin{equation}\end{equation}</td>
+    </tr>
+  </table>
+
+<h2>
+Graph of $f(\theta) = \pm A \mathrm{trig} \left( B ( \theta - C ) \right) + D$
+</h2>
+
+\begin{align}
+A &= \text{amplitude / vertical stretch} = \frac{\text{max}-\text{min}}{2} \\[.75em]
+B &= \frac{\text{original period}}{\text{new period}}\\[.75em]
+C &= \text{phase shift / horizontal shift} \\[.75em]
+D &= \text{midline / vertical shift} = \frac{\text{max}+\text{min}}{2}
+\end{align}
+
+</body>
+
+<footer>
+  Trevor Kafka | www.trevorkafka.com
+</footer>
